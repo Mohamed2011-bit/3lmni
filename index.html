@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Almni</title>
+</head>
+
+<body>
+
+    <!--==========================================Nav bar ===============================================-->
+    <section id="nav" class="navbar" style="font-style: inherit; font-size: 16; font-weight: bold;">
+        <div class="logo">
+            <a href="index.html"> <img src="assets/images/Logo-removebg-preview.png" width="60px" height="60px" alt="logo"></a>
+        </div>
+        <div class="list">
+            <a href="pages/Reg-login/Login.html" class="notActive" id="signIn">Sign In</a>
+            <a href="pages/Reg-login/Registration.html" class="notActive" id="signUp">Sign Up</a>
+            <a href="pages/servay/Survey.html" class="notActive">Survey</a>
+            <a href="pages/Events/Events.html" class="notActive" id="events">Events</a>
+            <a href="pages/Tasks/calender.html" class="notActive" id="Notes">Add Notes</a>
+            <a href="pages/documentation/Tracks.html" class="notActive" id="tracks">Tracks</a>
+            <a href="pages/About/about.html" id="about" class="notActive">About</a>
+            <a href="index.html" id="home" class="notActive">Home</a>
+        </div>
+    </section>
+    <!--<section id="nav">
+        
+        <div class="logo">
+            <img src="assets/images/Logo-removebg-preview.png" width="100px" height="100px" alt="logo">
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our Course</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+    </section>-->
+    <!--==========================================Header ===============================================-->
+
+
+    <section id="header">
+        <h1>Let's Discover The World </h1>
+    </section>
+
+
+    <!--========================================== Welcom Video ===============================================-->
+
+    <section id="welcome">
+        <h2><span>W</span>ho <span>W</span>e <span>A</span>re ?!</h2>
+        <div class="parent">
+            <div class="info">
+                <p>Discover The Hidden Side of web<br> Most programmers are professionals in their job not because they are highly paid not but because they believe programming is fun
+                    <br> By Linus torvalds
+                </p>
+            </div>
+
+            <div class="video">
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/taO7nfcoCT0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <div class="clr"></div> -->
+    <!--========================================== Links ===============================================-->
+    <section id="links">
+        <div class="parent">
+            <a href="http://www.iti.gov.eg/" target="_blank"><img src="assets/images/ITI.png" width="350px" alt="Iti"></a>
+            <a href="https://maharatech.gov.eg/" target="_blank"><img src="assets/images/mhara.png" width="250px" alt="mhara-tech"></a>
+            <a href="https://www.udemy.com/" target="_blank"><img src="assets/images/udemy.svg" width="250px" alt="udemy"></a>
+            <a href="https://www.facebook.com/Routelearning" target="_blank"><img src="assets/images/Route.png" width="150px" alt="Route"></a>
+            <a href="https://www.edx.org/" target="_blank"><img src="assets/images/edx-logo.png" width="150px" alt="Edx"></a>
+            <a href="https://www.coursera.org/" target="_blank"><img src="assets/images/coursera.svg" width="250px" alt="coursera"></a>
+            <a href="https://online-learning.harvard.edu/" target="_blank"><img src="assets/images/harvard.png" width="150px" alt="Harvard"></a>
+
+        </div>
+    </section>
+    <!--========================================== Contact Us ===============================================-->
+
+    <section id="contact">
+        <h2><span>K</span>eep <span>I</span>n <span>T</span>houch</h2>
+        <div class="parent">
+            <div class="contactInfo">
+                <p> Phone Number : 01141736576</p>
+                <p>Adress : Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <p>Email : almniproject@gmail.com</p>
+            </div>
+            <div class="contactUs">
+                <form action="">
+                    <input type="text" class="form-control" name="username" placeholder="Enter Your Name" id="username">
+                    <p class="usernameAlert alert">Invalid User Name</p>
+                    <input type="Email" class="form-control" name="email" placeholder="Enter Your Email" id="email">
+                    <div class="emailAlert alert">Invalid Email</div>
+                    <input type="text" class="form-control" name="phone" placeholder="Enter Your Phone Number" id="number">
+                    <div class="phoneAlert alert">Invalid Mobile Number</div>
+                    <textarea class="form-control" placeholder="Enter Your Message" id="mailBody"></textarea>
+                    <div class="messageAlert alert">Invalid Message</div>
+                    <input type="button" onclick="sendNow()" value="Send Message" id="submit" class="button" disabled>
+                    <!-- <button value="Send Email" onclick="sendEmail()">Send Message</button> -->
+                </form>
+            </div>
+            <div class="followUs">
+                <h3>Follow Us</h3>
+                <i class="fab fa-facebook-f fa-2x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-linkedin-in fa-2x"></i>
+            </div>
+        </div>
+    </section>
+    <div class="clr"></div>
+
+    <!--========================================== Footer ===============================================-->
+
+    <section id="footer">
+        <div class="copy">
+            <p>Copyright &copy; 2020 </p><a href="https://almni.netlify.app/pages/about/about" target="_blanck">&nbsp; 3lmni Team</a>
+        </div>
+    </section>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

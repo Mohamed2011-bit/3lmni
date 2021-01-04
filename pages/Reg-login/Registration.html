@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Registration.css">
+  <script src="./require.js"></script>
+
+</head>
+
+<body>
+  <section id="nav" class="navbar" style="font-style: inherit; font-size: 16; font-weight: bold;">
+    <div class="logo">
+      <a href="index.html"> <img class="b-i" src="../../assets/images/Logo-removebg-preview.png" width="60px" height="60px"
+          alt="logo"></a>
+    </div>
+    <div class="list">
+      <a href="../Reg-login/Login.html" class="notActive" id="signIn">Sign In</a>
+      <a href="Registration.html" class="notActive" id="register">Sign Up</a>
+      <a href="../servay/Survey.html" class="notActive">Survey</a>
+      <a href="../Events/Events.html" class="notActive" id="events">Events</a>
+			<a href="../Tasks/calender.html" class="notActive" id="Notes">Add Notes</a>
+      <a href="../documentation/Tracks.html" class="notActive" id="tracks">Tracks</a>
+      <a href="../About/about.html" id="about" class="notActive">About</a>
+      <a href="../../index.html" id="home" class="notActive">Home</a>
+    </div>
+  </section>
+  
+
+  <main class="m">
+    <div class="overlay">
+      
+    </div>
+    <div class="d" class="container">
+      <h2 class="h2">Register Now</h2><br><br>
+      <!--
+      <p class="p">Thanks For Your Time To Help Us Improve</p>
+    -->
+    </div>
+
+    <br>
+    <section class="s">
+      <form class="f" method="POST" action="http://localhost:8081/addUser">
+        <label for="name"><b>Name</b></label>
+        <input class="l-i" type="text" placeholder="Enter Name Here" name="username" id="name" required>
+        <p class="usernameAlert alert">Invalid User Name</p>
+
+        <br>
+        <br>
+
+        <label for="email"><b>Email</b></label>
+        <input class="l-i" type="text" placeholder="Enter Email" name="email" id="email" required>
+        <div class="emailAlert alert">Invalid Email</div>
+
+
+        <br>
+        <br>
+
+        <label for="psw"><b>Password</b></label>
+        <input class="l-i" type="password" placeholder="Enter Password" name="password" id="psw" required>
+
+        <br>
+        <br>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input class="l-i" type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <div class="passAlert alert">Password not Mached</div>
+
+        <br>
+
+        <!-- <hr> -->
+        <br>
+
+        <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+
+        <button type="submit" class="registerbtn b"  id="submit"  onclick="alert('Successfully Regesterd now Please Login')" disabled>Register</button>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container signin">
+          <p>Already have an account? <a href="Login.html">Sign in</a>.</p>
+        </div>
+
+        <br>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script>
+    var xhr;
+    function getUser() {
+      // 1- Create XHR
+      if (window.XMLHttpRequest)
+        xhr = new XMLHttpRequest();
+      else
+        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+
+      //2- Check Server status, and deal with server return
+      xhr.onreadystatechange = statusCheck;
+
+      //3- Send Request
+      xhr.open('GET', 'JSON.json', true);
+      xhr.send(null);
+    }
+
+
+    function statusCheck() {
+      if (xhr.readyState == 4) //4= loaded
+        if (xhr.status == 200) //200=OK
+        {
+          var jsonStr = xhr.responseText;
+          alert(jsonStr);
+          var jsonT = JSON.parse(jsonStr);
+          document.write(jsonT[0].username);
+        }
+    }
+
+  </script>
+  <script src="reg.js"></script>
+
+</body>
+
+</html>

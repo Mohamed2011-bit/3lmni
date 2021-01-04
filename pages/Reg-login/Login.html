@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+
+<body>
+	
+    <section id="nav" class="navbar" style="font-style: inherit; font-size: 16; font-weight: bold;">
+        <div class="logo">
+            <a href="index.html"> <img src="Logo-removebg-preview.png" width="60px" height="60px" alt="logo"></a>
+        </div>
+        <div class="list">
+            <a href="Login.html" class="notActive" id="signIn">Sign In</a>
+            <a href="../Reg-login/Registration.html" class="notActive" id="signUp">Sign Up</a>
+            <a href="../servay/Survey.html" class="notActive">survay</a>
+			<a href="../Events/Events.html" class="notActive" id="events">Events</a>
+			<a href="../Tasks/calender.html" class="notActive" id="Notes">Add Notes</a>
+            <a href="../documentation/Tracks.html" class="notActive" id="tracks">Tracks</a>
+            <a href="../About/about.html" id="about" class="notActive">About</a>
+            <a href="../../index.html" id="home" class="notActive">Home</a>
+        </div>
+    </section>
+	<!-- <img class="b-i" src="background.jpg"> -->
+	<main id="r">
+		<div style="text-align: center; color: white;">
+			<h1 class="h1">3lmni Login</h1><br><br>
+		</div>
+		<section class="s">
+			<div class="form-inline">
+				<label for="email">User Name:</label>
+				<input class="l-i" type="text" id="username" placeholder="Enter Yor Name" name="username">
+
+				<br>
+				<br>
+
+				<label for="pwd">Password:</label>
+				<input class="l-i" type="password" id="password" placeholder="Enter password" name="password">
+
+				<br>
+				<br>
+				<!--
+				<label>Remember me</label>
+				<input class="l-i" type="checkbox" name="remember"> 
+			    -->
+
+				<!-- <input type="button" name="button" value="Submit" id="" class="button" onclick="login()"> -->
+
+				<input class="l-i" type="button" name="button" value="Submit" id="" class="button" onclick="login()">
+				<!-- <button class="button" type="submit" onclick="login()">Submit</button> -->
+			</div>
+		</section>
+	</main>
+	<script src="login.js"></script>
+</body>
+
+</html>

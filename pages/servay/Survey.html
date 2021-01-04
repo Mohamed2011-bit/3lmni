@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>	
+	<link rel="stylesheet" type="text/css" href="Survey.css">
+</head>
+<body class="b" onload="printStorage()">
+
+	<section id="nav" class="navbar" style="font-style: inherit; font-size: 16; font-weight: bold;">
+        <div class="logo">
+            <a href="index.html"> <img src="Logo-removebg-preview.png" width="60px" height="60px" alt="logo"></a>
+        </div>
+        <div class="list">
+			<a href="../Reg-login/Login.html" class="notActive" id="signIn">Sign In</a>
+            <a href="../Reg-login/Registration.html" class="notActive" id="signUp">Sign Up</a>
+            <a href="Survey.html" class="notActive" id="survey">Survey</a>
+			<a href="../Events/Events.html" class="notActive" id="events">Events</a>
+			<a href="../Tasks/calender.html" class="notActive" id="Notes">Add Notes</a>
+            <a href="../documentation/Tracks.html" class="notActive" id="tracks">Tracks</a>
+            <a href="../About/about.html" id="about" class="notActive">About</a>
+            <a href="../../index.html" id="home" class="notActive">Home</a>
+        </div>
+	</section> 
+	
+	<!-- <img class="b-i" src="Survey Form.jpg"> -->
+	<main class="m" style="bottom: 20px;">
+		<div style="text-align: center; margin-top: 30px; color:transparent;">
+			<h1 class="h1">3lmni</h1><br><br>
+		    <p class="p">Thanks For Your Time To Help Us Improve</p>
+		</div>
+
+		<br>
+		
+		<section class="s">
+			<form class="s-f" action="">
+				<label for="n"> Name <br>
+					<input class="l-i" id="n" type="text" placeholder="Enter your name" required>
+				</label>
+
+				<br>
+				<br>
+
+				<label for="e">Email <br>
+					<input class="l-i" id="e" type="Email" placeholder="Enter your Email" required>
+				</label>
+
+				<br>
+				<br>
+
+				<label for="a1">Age (optional) <br>
+					<input class="l-i" id="a1" type="Age" placeholder="Age">
+				</label>
+
+				<br>
+				<br>
+				<label for="cars">Gender<br>
+					<select id="cars">
+						<option id="cars">Male</option>
+						<option id="cars">Female</option> 
+					</select>
+					<br><br>
+					
+				<label for="cars1">Which option best describes your current role?<br>
+				<select id="cars1">
+					<option id="cars1">Student</option>
+					<option id="cars1">Full Time Job</option>
+					<option id="cars1">Full Time Learner</option>
+					<option id="cars1">Prefer not to say</option>
+					<option id="cars1">Others</option>
+				</select>
+				</label>
+	
+				<br>
+				<br>	
+
+				<label for="rec0">How did you know about our site ?<br>
+					<input class="l-i" id="rec0" type="radio" checked="">Suggested from Friend<br>
+					<input class="l-i" id="rec0" type="radio" >Ad on Facebook<br>
+					<input class="l-i" id="rec0" type="radio" >Random Search <br><br>
+				</label>
+				
+				<label for="rec">Would you recommend 3lmni to a friend?<br>
+					<input class="l-i" id="rec" type="radio"  checked="">Definitely<br>
+					<input class="l-i" id="rec" type="radio" >Maybe<br>
+					<input class="l-i" id="rec" type="radio" >Not sure
+				</label>
+
+				<br>
+				<br>
+
+				<label for="rec1">What Is Your Opinion About Our Site?<br>
+					<input class="l-i" id="rec1" type="radio" checked="">Very Good<br>
+					<input class="l-i" id="rec1" type="radio">Good<br>
+					<input class="l-i" id="rec1" type="radio">Fair<br><br>
+				</label>
+
+				<label for="imp">What Track are You Interest in? (Check all that apply)<br>
+					<input class="l-i" type="checkbox" value="Front">Front-end Projects<br>
+					<input class="l-i" type="checkbox" value="Back">Back-end Projects<br>
+					<input class="l-i" type="checkbox" value="IT">IT Administration<br>
+					<input class="l-i" type="checkbox" value="graphic">2d Grapjic Designing<br>
+					<input class="l-i" type="checkbox" value="Embedded">Embedded system<br>
+					<input class="l-i" type="checkbox" value="cloud">Cloud developer
+				</label>
+
+				<br>
+				<br>
+
+				<label  for="ar">Any comments or suggestions?<br>
+					<input class="l-i" style="border-radius: 5px; width: 400px; height: 100px;" id="ar" type="textarea">
+				</label>
+
+				<br>
+				<br>
+
+				<button class="s-f-b" type="submit" onclick="storage()"><strong>Submit</strong></button>
+			</form>
+		</section>
+	</main>
+
+	<!-- <section id="footer">
+        <div class="copy">
+            <p>Copyright &copy; 2020 </p><a href="https://almni.netlify.app/pages/about/about" target="_blanck">&nbsp; 3lmni Team</a>
+        </div>
+    </section>  -->
+	<script src="Survay.js"></script>
+</body>
+</html>

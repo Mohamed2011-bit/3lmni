@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <script src="./require.js"></script>
+</head>
+<body>
+    <input type="button" value="get username" onclick="getUser()">
+    <form method="POST" action="http://localhost:8081/addUser">
+        <input type="text" name="username">
+        <input type="text" name="password">
+        <input type="submit" value="done">
+    </form>
+    <script>
+        var xhr;		
+        function getUser() 
+        {
+			// 1- Create XHR
+			if (window.XMLHttpRequest)
+                xhr=new XMLHttpRequest();
+			else
+			    xhr=new ActiveXObject("Microsoft.XMLHTTP");
+            
+            //2- Check Server status, and deal with server return
+			xhr.onreadystatechange = statusCheck; 
+			
+			//3- Send Request
+			xhr.open('GET','JSON.json', true);
+			xhr.send(null);
+        }
+		
+		
+        function statusCheck() 
+        {
+            if (xhr.readyState == 4) //4= loaded
+                if (xhr.status == 200) //200=OK
+                {
+					var jsonStr = xhr.responseText;
+                    alert(jsonStr);
+					var jsonT =JSON.parse(jsonStr);
+                    document.write(jsonT[0].username);
+
+                } 
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+*
+{
+  padding: 0;
+  margin:0   ;
+}
+ 
+.navbar {
+  overflow: hidden;
+  background-color:brown;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding: 0 50px;
+
+}
+/* Style the navigation bar links */
+.navbar .list a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.navbar .list a:hover {
+  background-color: rgb(119, 5, 5);
+  color: white;
+}
+/* Active/current link */
+.navbar .list  a.active {
+  background-color: rgb(119, 5, 5);
+  color: white;
+}
+.navbar .logo
+{
+float: left;
+}
+.cal{
+  display: flex;
+  justify-content: center;
+  /* height: 70vh; */
+  margin: 70px 0;
+
+}
+
+/* [CONTAINER] */
+#cal-wrap { max-width: 600px; }
+
+/* [PERIOD SELECTOR] */
+#cal-date { display: flex; }
+#cal-mth, #cal-yr, #cal-set {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: 0;
+  color: #fff;
+}
+#cal-mth, #cal-yr { background: #ea4c4c; }
+#cal-set { background: #4e83d9; }
+
+/* [CALENDAR] */
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+#calendar tr.head td {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #f37070;
+  padding: 15px;
+  text-align: center;
+}
+#calendar tr.day td {
+  border: 1px solid #ddd;
+  width: 14.28%;
+  padding: 15px 5px;
+  vertical-align: top;
+}
+#calendar tr.day td:hover {
+  background: #fff9e4;
+  cursor: pointer;
+}
+#calendar tr td.blank {
+  background: #f5f5f5;
+}
+#calendar .dd {
+  font-size: 1.2em;
+  color: #999;
+}
+#calendar .evt {
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  overflow: hidden;
+  color: #ff5d5d;
+}
+
+/* [ADD/EDIT EVENT] */
+#cal-event form {
+  padding: 15px;
+  margin-top: 20px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+}
+#cal-event h1 {
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+#evt-date {
+  color: #999;
+  margin: 10px 0;
+}
+#cal-event textarea {
+  display: block;
+  box-sizing: padding-box;
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  resize: none;
+}
+#cal-event input[type=button], #cal-event input[type=submit] {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2em;
+  border: 0;
+  background: #ea4c4c;
+  color: #fff;
+}
+
+/* [DOES NOT MATTER] */
+html, body, textarea, input {
+  font-family: arial, sans-serif;
+}
+
+
+.copy
+{
+    background-color: #111111;
+    color: #FFF;
+    text-align: center;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size:80%;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background-color: rgb(46, 54, 54);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.calender{
+    width:45rem;
+    height:52rem;
+    background-color: rgb(130, 137, 238);
+    box-shadow:0 0.5rem 3rem rgb(9, 37, 116);
+
+    
+}
+
+.month{
+    width:100%;
+    height:12rem;
+    background-color: navy;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 2rem;
+    text-align: center;
+    box-shadow:0.3rem 0.5rem rgb(13, 4, 92);
+}
+.month i{
+    font-size:2.5rem;
+   cursor: pointer;
+}
+.month h1{
+    font-size:3rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+.month p{
+    font-size:1.6rem;
+}
+
+.weekdays{
+    width:100%;
+    height:5rem;
+    padding:0 .4rem ;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div{
+    height:100%;
+    font-size:1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    width:calc(50rem/7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0.3rem 0.5rem rgb(3, 12, 92);    
+}
+.days{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+
+}
+.days div
+{
+ font-size:1.4rem;
+ margin: 0.3rem;
+ width: calc(40.2rem/7);
+ height:5rem;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ box-shadow:0.3rem 0.5rem rgb(8, 14, 1);
+ transition:background-color 0.2s;
+}
+
+
+.days div:hover:not(.today){
+    background-color:gold;
+    border:0.2rem solid green;
+    cursor: pointer;
+}
+
+.prev-date,.nxt-days{
+    opacity:0.5;
+}
+
+.today{
+    background-color: gold;
+}
+
+#fa{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background-color: brown;
+} */

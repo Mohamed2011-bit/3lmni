@@ -1,0 +1,148 @@
+*{
+    margin:0px;
+    padding:0px;
+    /* box-sizing: border-box; */
+}
+h1,h2,h3,h4,h5,h6,p,a
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:brown;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding: 0 50px;
+    z-index: 999;
+  }
+  /* Style the navigation bar links */
+.navbar .list a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  /* Change color on hover */
+.navbar .list a:hover {
+    background-color: rgb(119, 5, 5);
+    color: white;
+  }
+  /* Active/current link */
+.navbar .list  a.active {
+    background-color: rgb(119, 5, 5);
+    color: white;
+}
+.navbar .logo
+{
+  float: left;
+}
+/* body{
+    background-color: rgb(143, 131, 116);
+} */
+
+h1{
+    text-align:center;
+    /* font-size:40px;
+    margin:5px;
+    padding:10px; */
+    /* background-color:; */
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    
+}
+span
+{
+    color: #990000;
+    font-size: 50px;
+}
+ #sec a {
+    font-size:18px;
+    color:black;
+    text-align:center}
+    
+    a:hover{
+        color:yellow }
+
+
+    #sec{ 
+        padding:10px 15px ;
+        overflow: hidden;
+      }        
+
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6 {   
+    width:31%;
+    height:300px;
+    padding:5px;
+    margin:10px;
+    float:left;
+    text-align:center; 
+    font-size:20px;
+}
+
+
+.slide1{
+background-color: #17607F;
+font-size:22px;
+font-weight:bold;
+color:white
+}
+
+
+
+
+.slide2{
+    background-color:blue;
+    /* font-size:20px; */
+    font-weight:bold;
+    color:white
+
+}
+.slide3{
+    background-color:purple;
+    /* font-size:25px; */
+    font-weight:bold;
+    color:white
+
+}
+.slide4{
+    background-color:rgb(21, 74, 95);
+    /* font-size:25px; */
+    font-weight:bold;
+    color:white
+}
+.slide5{
+    background-color:#17607F;
+    /* font-size:25px; */
+    font-weight:bold;
+    color:white
+
+}
+.slide6{
+    background-color:rgb(58, 7, 58);
+    /* font-size:25px; */
+    font-weight:bold;
+    color:white
+}
+
+
+.copy
+{
+    background-color: #111111;
+    color: #FFF;
+    text-align: center;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy a
+{
+    color: #fff;
+    text-decoration: none;
+}

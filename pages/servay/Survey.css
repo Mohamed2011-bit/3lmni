@@ -1,0 +1,136 @@
+*
+{
+       padding: 0;
+       margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a,label
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+       overflow: hidden;
+       background-color:brown;
+       position: sticky;
+       position: -webkit-sticky;
+       top: 0;
+       padding: 0 50px;
+       z-index: 999;
+     }
+     /* Style the navigation bar links */
+   .navbar .list a {
+       float: right;
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 20px 20px;
+       text-decoration: none;
+     }
+     /* Change color on hover */
+   .navbar .list a:hover {
+       background-color: rgb(119, 5, 5);
+       color: white;
+     }
+     /* Active/current link */
+   .navbar .list  a.active {
+       background-color: rgb(119, 5, 5);
+       color: white;
+   }
+   .navbar .logo
+   {
+     float: left;
+   }
+
+
+        .b{
+            position: relative;
+        }
+
+
+       .b-i{
+              position: absolute;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 100%;
+              height: 100%;
+              opacity: 0.5;
+       }
+
+       .m{
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              background-image: url("Survey\ Form.jpg");
+       }
+
+       .s{
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              border-radius: 5%;
+              width: 50%;
+              color: white;
+              background-color: rgba(15, 4, 66, 0.7);
+              /* margin-left: 300px; */
+              margin:auto;
+              font-size: 20px;
+              
+       }
+
+       .s-f{
+              margin-left: 20px;
+              margin-top: 20px;
+              margin-bottom: 10px;
+       }
+
+       .s-f-b{
+              background-color: #990000;
+              border-radius: 5px;
+              color: black;
+              width: 95%;
+              height: 50px;
+              font-size: 17px;
+       }
+
+       .l-i{
+              height: 20px;
+              width: 150px;
+       }
+
+       .h1{
+              font-size: 50px; 
+              color: black;
+              /* background-color: white; */
+              /* width: auto; */
+              color: #FFF;
+              padding: 5px;
+              border-radius: 5px;
+              display: inline;
+       }
+
+       .p{
+              font-size: 30px; 
+              color: black;
+              /* background-color: white; */
+              /* width: auto; */
+              color: #FFF;
+              padding: 5px;
+              border-radius: 5px;
+              display: inline;
+       }
+
+       .copy
+       {
+           background-color: #111111;
+           color: #FFF;
+           text-align: center;
+           height: 70px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+
+.copy a
+{
+    color: #fff;
+    text-decoration: none;
+}

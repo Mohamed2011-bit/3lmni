@@ -1,0 +1,127 @@
+*
+{
+       margin:0px;
+       padding:0px;
+       /* box-sizing: border-box; */
+   }
+          h1,h2,h3,h4,h5,h6,p,a,label
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+   .navbar {
+       overflow: hidden;
+       background-color:brown;
+       /* position: sticky;
+       position: -webkit-sticky; */
+       top: 0;
+       padding: 0 50px;
+       z-index: 999;
+     }
+     /* Style the navigation bar links */
+   .navbar .list a {
+       float: right;
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 20px 20px;
+       text-decoration: none;
+     }
+     /* Change color on hover */
+   .navbar .list a:hover {
+       background-color: rgb(119, 5, 5);
+       color: white;
+     }
+     /* Active/current link */
+   .navbar .list  a.active {
+       background-color: rgb(119, 5, 5);
+       color: white;
+   }
+   .navbar .logo
+   {
+     float: left;
+   }
+   
+
+
+#r{
+              /* position: relative; */
+              display: flex;
+              flex-direction: column;
+              background-image: url('background.jpg');
+              height:100vh ;
+              background-size: 100% 100%;
+       }
+
+
+       .b-i{
+              /* position: absolute; */
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 100%;
+              height: 100%;
+              opacity: 0.7;
+       }
+
+       .s{
+
+              border-style: double;
+              display: flex;
+              flex-direction: column;
+              border-radius: 5%;
+              width: 22%;
+              color: black;
+              margin-left: 500px;
+              margin-top: 70px;
+              font-size: 20px;
+              background-color: #990000;
+       }
+
+       .s .form-inline{
+              margin-left: 20px;
+              margin-top: 20px;
+              margin-bottom: 10px;
+              text-align: center;
+       }
+
+       /* .s .form-inline .button{
+              background-color: #990000;
+              border-radius: 5px;
+              color: black;
+              width: 95%;
+              height: 50px;
+              font-size: 17px;
+       } */
+
+       .l-i{
+              
+              width: 50%;
+              padding: 5px;
+              background-color: #fff;
+              border: none;
+              border-radius: 10px;
+       }
+
+       .d{
+              /* position: absolute; */
+              text-align: center; 
+              margin-top: 30px;
+              color: black;
+              background-color: #990000;
+              width: auto;
+              display: flex;
+              flex-direction: column;
+              margin-top: 50px;
+       }
+
+       .h2{
+              
+              font-size: 70px; 
+              color: black;
+              background-color: #990000;
+              padding: 5px;
+              border-radius: 5px;
+              display: inline;
+              /* width: auto; */
+              border-style: double;
+
+       }
